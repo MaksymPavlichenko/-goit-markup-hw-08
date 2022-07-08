@@ -1,0 +1,18 @@
+@import "./utils/vars";
+@import "./utils/hidden";
+
+@import "./common/reset";
+@import "./common/general";
+@import "./common/header";
+@import "./common/logo";
+@import "./common/footer";
+
+@import "./main_page/hero";
+@import "./main_page/modal";
+@import "./main_page/dignity";
+@import "./main_page/works";
+@import "./main_page/team";
+@import "./main_page/clients";
+
+@import "./portfolio/portfolio-nav";
+@import "./portfolio/portfolio_examples"
