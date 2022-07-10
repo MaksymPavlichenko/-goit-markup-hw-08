@@ -1,19 +1,27 @@
-.clients{
-    padding-top: 94px;
+.clients {
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 94px;
+      
+    }
 }
 
 .clients__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
+    font-weight: 700px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    color: $dark-text;
 }
 
 .clients__list {
-    margin-top: 50px;
     display: flex;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .client:not(:last-child) {

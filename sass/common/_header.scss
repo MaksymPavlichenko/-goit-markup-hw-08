@@ -1,16 +1,19 @@
-
-.nav {
+.page-header {
+    display: flex;
+    padding: 16px 0;
     border-bottom: 1px solid #ececec;
 }
 
-.site-nav {
+
+.container-header {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 
 .site-nav__link {
     display: flex;
-    align-items: center;
 }
 
 .site-nav__list:not(:last-child) {
@@ -24,6 +27,7 @@
     color: $dark-text;
     padding: 32px 0;
     display: block;
+    position: relative;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -53,13 +57,15 @@
         height: 4px;
         background-color: $selection-color;
         border-radius: 2px;
+
+        @media screen and (min-width: 1200px) {
+            top: 260%;
+        }
     }
 }
 
-.nav-contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+.nav-contacts__list:not(:last-child){
+    margin-bottom: 10px;
 }
 
 .nav-contacts__item {
@@ -68,7 +74,7 @@
     letter-spacing: 0.02em;
     color: $text-main;
     padding: 32px 0;
-    display: block;
+    display: flex;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -80,18 +86,80 @@
     }
 }
 
-
-.nav-contacts__list:not(:last-child) {
-    margin-right: 50px;
-}
-
-.container-header {
-    display: flex;
-    align-items: center;
-}
-
 .nav-contacts__icon-phone,
 .nav-contacts__icon-mail {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+
+    .site-nav, .nav-contacts {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        overflow: hidden;   
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .page-header {
+        padding: 21px 0;
+    }
+   
+    .mob-menu__open-btn {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+   
+    .page-header {
+        padding: 24px 0 25px 0;
+    }
+
+    .container-header {
+        flex-direction: none;
+        justify-content: left;
+    }
+    
+
+    .site-nav {
+        display: flex;
+        margin-left: 93px;
+    }
+
+
+    .nav-contacts{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    
+
+        &__list:not(:last-child){
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+
+        &__item {
+            font-size: 14px;
+            line-height: 1.143;
+        }
+    }
 }

@@ -13,50 +13,102 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="nav">
+    <header class="page-header">
       <div class="container container-header">
-          <nav class="site-nav">
-              <a href="./index.html" class="site-nav__logo link">Web<span class="site-nav__logo-color">Studio</span></a>
-              <ul class="site-nav__link list">
-                  <li class="site-nav__list"><a href="./index.html" class="site-nav__item link site-nav__item--curent">Студия</a></li>
-                  <li class="site-nav__list"><a href="./portfolio.html" class="site-nav__item link">Портфолио</a></li>
-                  <li class="site-nav__list"><a href="" class="site-nav__item link">Контакты</a></li>
-              </ul>
-          </nav>
-          <ul class="nav-contacts list">
-              <li class="nav-contacts__list">
-                  <a href="mailto:info@devstudio.com" class="nav-contacts__item link">
-                      <svg
-                      class="nav-contacts__icon-mail"
-                      width="16"
-                      height="12"
-                    >
-                      <use
-                        href="./img/icons.svg#icon-mail"
-                        class="nav-contacts__mail-item"
-                      ></use>
-                    </svg>
-                      info@devstudio.com
-                  </a>
-              </li>
-              <li class="nav-contacts__list">
-                  <a href="tel:+380961111111" class="nav-contacts__item link">
-                      <svg
-                      class="nav-contacts__icon-phone"
-                      width="10"
-                      height="16"
-                    >
-                      <use
-                        href="./img/icons.svg#icon-phone"
-                        class="nav-contacts__phone-item"
-                      ></use>
-                    </svg>
-                      +38 096 111 11 11
-                  </a>
-              </li>
+        <!--ЛОГОТИП-->
+        <a href="./index.html" class="site-nav__logo link">Web<span class="site-nav__logo-color">Studio</span></a>
+        <!--КНОПКА МОБ МЕНЮ-->
+        <button type="button" class="mob-menu__open-btn">
+          <svg width="40" height="40">
+            <use href=""></use>
+          </svg> 
+        </button>
+        <!--НАВИГАЦИЯ-->
+        <nav class="site-nav">     
+          <ul class="site-nav__link list">
+              <li class="site-nav__list"><a href="./index.html" class="site-nav__item link site-nav__item--curent">Студия</a></li>
+              <li class="site-nav__list"><a href="./portfolio.html" class="site-nav__item link">Портфолио</a></li>
+              <li class="site-nav__list"><a href="" class="site-nav__item link">Контакты</a></li>
           </ul>
+        </nav>
+        <!--КОНТАКТЫ-->
+        <ul class="nav-contacts list">
+          <li class="nav-contacts__list">
+              <a href="mailto:info@devstudio.com" class="nav-contacts__item link">
+                  <svg
+                  class="nav-contacts__icon-mail"
+                  width="16"
+                  height="12"
+                >
+                  <use
+                    href="./img/icons.svg#icon-mail"
+                    class="nav-contacts__mail-item"
+                  ></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
+          </li>
+          <li class="nav-contacts__list">
+              <a href="tel:+380961111111" class="nav-contacts__item link">
+                  <svg
+                  class="nav-contacts__icon-phone"
+                  width="10"
+                  height="16"
+                >
+                  <use
+                    href="./img/icons.svg#icon-phone"
+                    class="nav-contacts__phone-item"
+                  ></use>
+                </svg>
+                <span>+38 096 111 11 11</span>
+              </a>
+          </li>
+        </ul>
       </div>
+      <!--МОБ МЕНЮ-->
+      <div class="mob-menu is-hidden">
+      <!--КНОПКА X МОБ МЕНЮ-->
+        <button type="button" class="mob-menu__close-btn">
+          <svg width="40" height="40">
+            <use href=""></use>
+          </svg> 
+        </button>
+      <!--МОБ НАВИГАЦИЯ-->
+        <div class="mob-menu__list"></div>
+          <nav>
+            <ul class="mob-menu__site-nav list">
+              <li class="mob-site-nav__item"><a class="link mob-current mob-site-nav__link" href="./index.html">Студия</a></li>
+              <li class="mob-site-nav__item"><a class="link mob-site-nav__link" href="./portfolio.html">Портфолио</a></li>
+              <li class="mob-site-nav__item"><a class="link mob-site-nav__link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+      <!--МОБ МЕНЮ КОНТАКТЫ-->
+          <div class="mob-menu__contacts">    
+            <ul class="list">
+              <li class="mob-site-contact__item">
+                <a class="link mob-tel" href="tel:+">
+                  <span>+38 096 111 11 11</span>
+                </a>
+              </li>
+              <li class="mob-site-contact__item">
+                <a class="link mob-email" href="mailto:">
+                  <span>info@devstudio.com</span> 
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-social list">
+              <li class="mob-social__list"><a class="link mob-social__item" href=""><span>Instagram</span></a></li>
+              <li class="mob-social__list"><a class="link mob-social__item" href=""><span>Twitter</span></a></li>
+              <li class="mob-social__list"><a class="link mob-social__item" href=""><span>Facebook</span></a></li>
+              <li class="mob-social__list"><a class="link mob-social__item" href=""><span>LinkedIn</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
     </header>
+
+
     <main>
         <!--Основная часть-->
         <section class="hero">
@@ -66,7 +118,7 @@
             </div>
         </section>
         <!--Достоинства-->
-        <section class="section dignity">
+        <section class="dignity">
             <div class="container">
                 <h2 hidden>Наши достоинства</h2>
                 <ul class="dignity__list list">
@@ -134,7 +186,7 @@
             </div>
         </section>
         <!--Работы-->
-        <section class="section work">
+        <section class="work">
             <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__exaples list">
@@ -647,6 +699,7 @@
         </button>
       </form>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
