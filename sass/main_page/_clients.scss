@@ -22,17 +22,21 @@
     flex-wrap: wrap;
     justify-content: center;
     
+    margin-left: -30px;
+    margin-bottom: -30px;
 }
 
-.client:not(:last-child) {
-    margin-right: 30px;
+.client {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .client__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+   
     height: 92px;
   
     color: $icon-fill;
@@ -53,4 +57,36 @@
   
 .client__icon {
     fill: $text-main;
+}
+
+@media screen and (min-width: 768px) {
+
+    .client {
+        width: calc(100%/3 - 30px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .clients-title {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+    
+    .clients-list {
+        flex-wrap: nowrap;
+    }
+    
+    .client {
+        width: calc(100%/6 - 30px);
+    }
+    
+    .client__link {
+        padding: 16px 0;
+    }
+    
+    .client + .client {
+        margin-left: 30px;
+    }
 }

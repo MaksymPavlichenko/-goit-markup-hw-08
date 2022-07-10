@@ -11,6 +11,10 @@
     margin-bottom: 30px;
 }
 
+.team__member {
+    display: block;
+}
+
 .team__discription {
     background-color: $bg-main;
     width: 100%;
@@ -18,6 +22,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__foto {
+    width: 100%;
 }
 
 .team__item {
@@ -51,7 +59,7 @@
 
 .worker-conect{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .worker-conect__link {

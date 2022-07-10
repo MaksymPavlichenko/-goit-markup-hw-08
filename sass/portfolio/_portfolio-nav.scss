@@ -1,15 +1,18 @@
-.portfolio{
+.portfolio {
     padding-top: 94px;
 }
 
 .portfolio__nav {
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
     justify-content: center; 
+
+    margin-bottom: 25px;
 }
 
 .portfolio__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .portfolio__button {
@@ -39,4 +42,20 @@
 .portfolio__button--curent {
     background-color: $selection-color;
     color: $bg-main;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio__nav {
+        padding-bottom: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+      
+    .portfolio__nav{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+    }
 }

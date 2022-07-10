@@ -74,7 +74,7 @@
           </svg> 
         </button>
       <!--МОБ НАВИГАЦИЯ-->
-        <div class="mob-menu__list"></div>
+        <div class="mob-menu__list">
           <nav>
             <ul class="mob-menu__site-nav list">
               <li class="mob-site-nav__item"><a class="link mob-current mob-site-nav__link" href="./index.html">Студия</a></li>
@@ -211,7 +211,7 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__member list">
                     <li class="team__discription">
-                        <img src="img/img.jpg" alt="Игорь Демьяненко" width="270"/>
+                        <img src="img/img.jpg" class="team__foto" alt="Игорь Демьяненко" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team__post">Product Designer</p>
@@ -272,7 +272,7 @@
                         </div>
                     </li>
                     <li class="team__discription">
-                        <img src="img/img-2.jpg" alt="Ольга Репина" width="270"/>
+                        <img src="img/img-2.jpg" class="team__foto" alt="Ольга Репина" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p lang="en" class="team__post">Frontend Developer</p>
@@ -333,7 +333,7 @@
                         </div>
                     </li>
                     <li class="team__discription">
-                        <img src="img/img-3.jpg" alt="Николай Тарасов" width="270"/>
+                        <img src="img/img-3.jpg" class="team__foto" alt="Николай Тарасов" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p lang="en" class="team__post">Marketing</p>
@@ -394,7 +394,7 @@
                         </div>
                     </li>
                     <li class="team__discription">
-                        <img src="img/img-4.jpg" alt="Михаил Ермаков" width="270"/>
+                        <img src="img/img-4.jpg" class="team__foto" alt="Михаил Ермаков" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p lang="en" class="team__post">UI Designer</p>
@@ -547,7 +547,7 @@
           </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-desctop">
           <div class="footer__content">
             <div class="footer__address">
               <a href="" class="logo link footer__logo">Web<span class="footer__logo-color">Studio</span></a>
@@ -615,7 +615,8 @@
                 </li>
               </ul>
             </div>
-            <form action="#" class="send-form">
+          </div>
+            <div class="send-form">
               <h2 class="send-form__title">Подпишитесь на рассылку</h2>
               <div class="send-form__wraper">
                 <label for="send" class="send-form__label">
@@ -628,8 +629,8 @@
                   </svg>
                 </button>
               </div>
-            </form>
-          </div>
+            </div>
+          
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -699,7 +700,9 @@
         </button>
       </form>
     </div>
-    <script src="./js/menu.js"></script>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 </html>

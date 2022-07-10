@@ -8,15 +8,6 @@
 
 .section {
     padding-bottom: 94px;
-
-    @media screen and (max-width: 1199px) {
-        padding-bottom: 60px;
-    }  
-    
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 94px;
-      
-    }
 }
 
 .container {
@@ -24,7 +15,6 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    box-sizing: border-box;
 
     @media screen and (min-width: 480px) {
         max-width: 480px;        
@@ -37,4 +27,5 @@
     @media screen and (min-width: 1200px) {
         max-width: 1200px;        
     }
+
 }
