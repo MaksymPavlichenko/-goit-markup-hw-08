@@ -20,13 +20,13 @@
         <!--КНОПКА МОБ МЕНЮ-->
         <button type="button" class="mob-menu__open-btn">
           <svg width="40" height="40">
-            <use href=""></use>
+            <use href="./img/icons.svg#icon-menu_24px"></use>
           </svg> 
         </button>
         <!--НАВИГАЦИЯ-->
         <nav class="site-nav">     
           <ul class="site-nav__link list">
-              <li class="site-nav__list"><a href="./index.html" class="site-nav__item link site-nav__item--curent">Студия</a></li>
+              <li class="site-nav__list"><a href="./index.html" class="site-nav__item link site-nav__item--current">Студия</a></li>
               <li class="site-nav__list"><a href="./portfolio.html" class="site-nav__item link">Портфолио</a></li>
               <li class="site-nav__list"><a href="" class="site-nav__item link">Контакты</a></li>
           </ul>
@@ -70,7 +70,7 @@
       <!--КНОПКА X МОБ МЕНЮ-->
         <button type="button" class="mob-menu__close-btn">
           <svg width="40" height="40">
-            <use href=""></use>
+            <use href="./img/icons.svg#icon-close_24px"></use>
           </svg> 
         </button>
       <!--МОБ НАВИГАЦИЯ-->
@@ -191,15 +191,21 @@
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__exaples list">
                     <li class="work__item">
-                      <img src="img/box1.jpg" alt="Набор кода" width="370"/>
+                      <img 
+                        srcset="./img/box1.jpg 1x, ./img/box1_@2x.jpg 2x"
+                        src="./img/box1.jpg" alt="Набор кода" width="370"/>
                       <h3 class="work__overlay">Десктопные приложения</h3>
                     </li>
                     <li class="work__item">
-                      <img src="img/box2.jpg" alt="Создание макета" width="370"/>
+                      <img 
+                        srcset="./img/box2.jpg 1x, ./img/box2_@2x.jpg 2x"
+                        src="./img/box2.jpg" alt="Создание макета" width="370"/>
                       <h3 class="work__overlay">Мобильные приложения</h3>
                     </li>
                     <li class="work__item">
-                      <img src="img/box3.jpg" alt="Индивидуальные решения" width="370"/>
+                      <img 
+                        srcset="./img/box3.jpg 1x, ./img/box3_@2x.jpg 2x"
+                        src="./img/box3.jpg" alt="Индивидуальные решения" width="370"/>
                       <h3 class="work__overlay">Дизайнерские решения</h3> 
                     </li>
                 </ul>
@@ -211,7 +217,9 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__member list">
                     <li class="team__discription">
-                        <img src="img/img.jpg" class="team__foto" alt="Игорь Демьяненко" width="270"/>
+                        <img 
+                          srcset="./img/img.jpg 1x, ./img/img_@2x.jpg 2x"
+                          src="./img/img.jpg" class="team__foto" alt="Игорь Демьяненко" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team__post">Product Designer</p>
@@ -272,7 +280,9 @@
                         </div>
                     </li>
                     <li class="team__discription">
-                        <img src="img/img-2.jpg" class="team__foto" alt="Ольга Репина" width="270"/>
+                        <img 
+                          srcset="./img/img-2.jpg 1x, ./img/img-2_@2x.jpg 2x"
+                          src="./img/img-2.jpg" class="team__foto" alt="Ольга Репина" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p lang="en" class="team__post">Frontend Developer</p>
@@ -333,7 +343,9 @@
                         </div>
                     </li>
                     <li class="team__discription">
-                        <img src="img/img-3.jpg" class="team__foto" alt="Николай Тарасов" width="270"/>
+                        <img 
+                          srcset="./img/img-3.jpg 1x, ./img/img-3_@2x.jpg 2x"
+                          src="./img/img-3.jpg" class="team__foto" alt="Николай Тарасов" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p lang="en" class="team__post">Marketing</p>
@@ -394,7 +406,9 @@
                         </div>
                     </li>
                     <li class="team__discription">
-                        <img src="img/img-4.jpg" class="team__foto" alt="Михаил Ермаков" width="270"/>
+                        <img 
+                          srcset="./img/img-4.jpg 1x, ./img/img-4_@2x.jpg 2x"
+                          src="./img/img-4.jpg" class="team__foto" alt="Михаил Ермаков" width="270"/>
                         <div class="team__item">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p lang="en" class="team__post">UI Designer</p>
@@ -642,8 +656,7 @@
         >
           <svg class="modal__close-icon" width="11" height="11">
             <use
-              href="./img/icons.svg#icon-close"
-            ></use>
+              href="./img/icons.svg#icon-close_24px"></use>
           </svg>
         </button>
         <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>

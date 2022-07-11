@@ -100,10 +100,9 @@
 }
    
 .send-form__btn {
-    display: flex;
     align-items: center;
     font-family: inherit;
-    box-sizing: border-box;
+    display: flex;
     box-shadow: none;
     font-weight: 700;
     font-size: 16px;
@@ -127,9 +126,6 @@
 .send-form__icon {
     margin-left: 10px;
     fill: $bg-main;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
 .send-form__input {
@@ -147,7 +143,7 @@
     align-items: center;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
 
     .footer__content {
         display: flex;
@@ -220,11 +216,11 @@
         width: 570px;
         height: 86px;
     }
-
+    
     .send-form__wraper {
         display: flex;
     }
-    
+
     .send-form__input {
         display: flex;
         width: 358px;

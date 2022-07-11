@@ -113,26 +113,20 @@ a {
   color: #2196F3;
 }
 
-.site-nav__item--curent {
+.site-nav__item--current {
   color: #2196F3;
   position: relative;
 }
-.site-nav__item--curent::after {
+.site-nav__item--current::after {
   content: "";
   box-sizing: border-box;
   display: block;
   position: absolute;
-  bottom: -1px;
-  left: 0;
+  bottom: -20px;
   width: 100%;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
-}
-@media screen and (min-width: 1200px) {
-  .site-nav__item--curent::after {
-    top: 260%;
-  }
 }
 
 .nav-contacts__list:not(:last-child) {
@@ -177,7 +171,6 @@ a {
   .page-header {
     padding: 21px 0;
   }
-
   .mob-menu__open-btn {
     position: absolute;
     width: 1px;
@@ -195,17 +188,14 @@ a {
   .page-header {
     padding: 24px 0 25px 0;
   }
-
   .container-header {
     flex-direction: none;
     justify-content: left;
   }
-
   .site-nav {
     display: flex;
     margin-left: 93px;
   }
-
   .nav-contacts {
     display: flex;
     align-items: center;
@@ -348,10 +338,9 @@ a {
 }
 
 .send-form__btn {
-  display: flex;
   align-items: center;
   font-family: inherit;
-  box-sizing: border-box;
+  display: flex;
   box-shadow: none;
   font-weight: 700;
   font-size: 16px;
@@ -372,9 +361,6 @@ a {
 .send-form__icon {
   margin-left: 10px;
   fill: #FFFFFF;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
 }
 
 .send-form__input {
@@ -391,22 +377,19 @@ a {
   align-items: center;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .footer__content {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: row;
   }
-
   .footer__address {
     width: 50%;
   }
-
   .footer-conect {
     width: 50%;
   }
-
   .send-form {
     display: flex;
     flex-direction: column;
@@ -424,7 +407,6 @@ a {
     justify-content: flex-start;
     text-align: left;
   }
-
   .footer-desctop {
     width: 100%;
     display: flex;
@@ -432,24 +414,20 @@ a {
     justify-content: flex-start;
     text-align: left;
   }
-
   .footer__content {
     width: 600px;
     justify-content: flex-start;
     text-align: left;
   }
-
   .footer__address {
     width: 231px;
     margin-bottom: 0;
     margin-right: 70px;
   }
-
   .footer-conect {
     width: 206px;
     text-align: left;
   }
-
   .send-form {
     flex-wrap: wrap;
     flex-direction: row;
@@ -460,11 +438,9 @@ a {
     width: 570px;
     height: 86px;
   }
-
   .send-form__wraper {
     display: flex;
   }
-
   .send-form__input {
     display: flex;
     width: 358px;
@@ -477,19 +453,24 @@ a {
   color: #FFFFFF;
   text-align: center;
   margin: 0 auto;
-  padding: 200px 0px;
-  max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+  padding: 118px 0px;
+  width: 100%;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_mob@2x.jpg);
+  }
 }
 
 .hero__discription {
   max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
@@ -519,6 +500,35 @@ a {
   background-color: #188CE8;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_tab@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__discription {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -816,13 +826,11 @@ a {
     margin-left: -30px;
     margin-bottom: -30px;
   }
-
   .dignity__item {
     width: calc(50% - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
   }
-
   .dignity__title {
     text-align: left;
   }
@@ -831,7 +839,6 @@ a {
   .dignity__list {
     flex-wrap: nowrap;
   }
-
   .dignity__item {
     width: calc(25% - 30px);
   }
@@ -860,7 +867,6 @@ a {
     color: #212121;
     margin-bottom: 50px;
   }
-
   .work__exaples {
     display: flex;
   }
@@ -870,7 +876,6 @@ a {
   .work__exaples .work__item:not(:last-child) {
     margin-right: 30px;
   }
-
   .work__overlay {
     color: #FFFFFF;
     background: rgba(47, 48, 58, 0.8);
@@ -983,7 +988,6 @@ a {
     margin-left: -30px;
     margin-bottom: -30px;
   }
-
   .team__discription {
     width: calc(50% - 30px);
     margin-left: 30px;
@@ -994,12 +998,10 @@ a {
   .team__member {
     flex-wrap: nowrap;
   }
-
   .team__title {
     font-size: 36px;
     margin-bottom: 50px;
   }
-
   .team__discription {
     width: calc(33.3333333333% - 30px);
   }
@@ -1069,19 +1071,15 @@ a {
     line-height: 1.17;
     margin-bottom: 50px;
   }
-
   .clients-list {
     flex-wrap: nowrap;
   }
-
   .client {
     width: calc(16.6666666667% - 30px);
   }
-
   .client__link {
     padding: 16px 0;
   }
-
   .client + .client {
     margin-left: 30px;
   }
@@ -1344,7 +1342,6 @@ a {
     margin-left: -30px;
     margin-bottom: -30px;
   }
-
   .example {
     width: calc(50% - 30px);
     margin-left: 30px;
